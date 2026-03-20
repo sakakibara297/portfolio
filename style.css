@@ -528,10 +528,33 @@ background:#333;
 } 
   .voice_card{
     flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .voice_container{
     gap: 0;
+  }
+  .voice_outer{
+  padding: 0;
+}
+   .voice_slider {
+    position: relative;
+  }
+
+  .voice_prev,
+  .voice_next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .voice_prev {
+    left: 5px;
+  }
+
+  .voice_next {
+    right: 5px;
   }
 }
 
